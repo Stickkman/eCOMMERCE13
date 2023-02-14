@@ -23,6 +23,8 @@ router.put('/:id', (req, res) => {
 
 router.delete('/:id', (req, res) => {
   // delete on tag by its `id` value
+  Tag.destroy({ where: { id: req.params.id, },})
+  .then((tag) => res.status(200).json(tag)).catch((e) => res.status(404).json(e));
 });
 
 module.exports = router;
