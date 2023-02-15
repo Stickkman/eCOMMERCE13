@@ -20,23 +20,23 @@ This app uses Node, Express, Dotenv, and Sequelize to interact with a MySql data
 Video Demonstration
  [*Video Demo Link*](https://drive.google.com/file/d/1XDwfPFmLvDp-3xTJvxMkeiRTxnJDZ7Hg/view)
 
-ScreenShot Below
+ScreenShots Below
 
 ![Application Demo Screenshot1](https://github.com/Stickkman/eCOMMERCE13/blob/main/assets/screenshots/screenshot01.jpg?raw=true)
 
-![Application Demo Screenshot1](https://github.com/Stickkman/eCOMMERCE13/blob/main/assets/screenshots/screenshot02.jpg?raw=true)
+![Application Demo Screenshot2](https://github.com/Stickkman/eCOMMERCE13/blob/main/assets/screenshots/screenshot02.jpg?raw=true)
 
 ## Installation
 
-Use 'npm install' from your preferred CLI to install dependencies. 
-If you need to change database logins, users, etc, edit the .env file after install.
-Open up the CLI and type 'mysql - u root -p' to login to mysql.
-Type 'source./db/schema.sql' to create the database.
-Type 'use ecommerce_db' to select the database for use.
+1. Use 'npm install' from your preferred CLI to install dependencies. 
+2. If you need to change database logins, users, etc, edit the .env file after install.
+3. Open up the CLI and type 'mysql - u root -p' to login to mysql.
+4. Type 'source./db/schema.sql' to create the database.
+5. Type 'use ecommerce_db' to select the database for use.
 
-To automatically seed the database with sample data type 'npm run seed'
-Once seeded you can 'SELECT * ' followed by table name to see the sample data.
-Type 'node server.js' to start the server.
+6. To automatically seed the database with sample data type 'npm run seed'
+7. Once seeded you can 'SELECT * ' followed by table name to see the sample data.
+8. Type 'node server.js' to start the server.
 
 From here you would switch over to Insomnia and run your create, read, update, or delete
 api routes accordingly to manipulate the data.
@@ -44,10 +44,10 @@ api routes accordingly to manipulate the data.
 ## Usage
 
 After installation, simply fire up Insomnia (or your preferred program) to start manipulating the data.
-You can Read all products/categories/tags by running GET commands, or a single one by id.
-You can Create products/categories/tags by running POST commands.
-You can Update products/categories/tags by running PUT commands with the associated id.
-You can Delete products/categories/tags by running DEL commands by the associated id.
+- You can Read all products/categories/tags by running GET commands, or a single one by id.
+- You can Create products/categories/tags by running POST commands.
+- You can Update products/categories/tags by running PUT commands with the associated id.
+- You can Delete products/categories/tags by running DEL commands by the associated id.
 
 All methods have validation checks built in to prevent mistakes.
 
