@@ -14,7 +14,7 @@ An app for the back end of a e-commerce website that uses sequelize to interact 
 
 
 ## Description
-This app uses Node, Express, Dotenv, and Sequelize to interact with a MySql database.  With the use of .env files it keeps your login credentials secure.  The database is synced up automatically with the server once it is started.  Currently there is test data in the seeds folder that can be modified to suit your needs.  The routes are organized by in the api folder to keep things clean.  This application is useful for quickly creating, reading, updating, and deleting data in the working database that can be used for the backend of an e-commerce site and is scalable due to its design.
+This app uses Node, Express, Dotenv, and Sequelize to interact with a MySql database.  With the use of a .env file it keeps your login credentials secure.  The database is synced up automatically with the server once it is started.  Currently there is test data in the seeds folder that can be modified to suit your needs.  The routes are organized in the api folder to keep things clean.  This application is useful for quickly creating, reading, updating, and deleting data in the working database that can be used for the backend of an e-commerce site and is scalable due to its design.
 
 ## Screenshots-Videos
 Video Demonstration
