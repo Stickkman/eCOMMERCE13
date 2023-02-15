@@ -27,13 +27,27 @@ router.get('/:id', async (req, res) => {
   } catch (e) { console.log(e); res.status(500).json(e);}
 });
 
-router.post('/', (req, res) => {
+router.post('/', async (req, res) => {
   // create a new tag
-});
-
-router.put('/:id', (req, res) => {
-  // update a tag's name by its `id` value
-});
+    try{ const newTag = await Tag.create(req.body);
+    res.json(newTag);
+    } catch (e) { console.log(e); res.status(500).json(e);}
+  });
+    
+// update a tag's name by its `id` value
+  router.put('/:id', async (req, res) => {
+    try {
+      const updateTag = await Tag.update(req.body, {
+        where: { id: req.params.id, },
+      });
+      if (!updateTag) {
+        res.status(404).json({ message: 'Id for tag not found.' }); return;
+      }
+      const updateTag2 = await Tag.findOne({ where: { id: req.params.id },});
+      res.json(updateTag2); } catch (e) { console.log(e);
+      res.status(500).json(e); }
+      });
+  
 
 router.delete('/:id', (req, res) => {
   // delete on tag by its `id` value
